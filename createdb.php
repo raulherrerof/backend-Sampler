@@ -1,62 +1,92 @@
 <?php
-include 'db_config.php';
+// setup_database.php (Ejecutar una vez para configurar la BD y las tablas)
 
-error_reporting(E_ALL); // Para ver todos los errores durante el desarrollo
+error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-
-$sql = "CREATE DATABASE IF NOT EXISTS $db";
-
-if (mysqli_query($conn, $sql)) {
-    echo "Base de datos creada exitosamente";
+// Incluye tu configuración de credenciales (donde defines DB_HOST, DB_USER, DB_PASS)
+// DB_NAME aquí será el nombre de la base de datos que quieres crear.
+if (file_exists(__DIR__ . '/config/db_config.php')) { // Asumiendo que está en una subcarpeta 'config'
+    require_once __DIR__ . '/config/db_config.php';
+} else if (file_exists(__DIR__ . '/db_config.php')) { // O en la misma carpeta
+    require_once __DIR__ . '/db_config.php';
 } else {
-    echo "Error al crear la base de datos: " . mysqli_error($conn);
+    // Definiciones por defecto si db_config.php no se encuentra
+    // (ESTO ES SOLO PARA FACILITAR LA PRUEBA INICIAL, NO PARA PRODUCCIÓN)
+    define('DB_HOST', 'localhost');
+    define('DB_USER_SETUP', 'root'); // Usuario con permisos para CREAR DATABASE (a menudo root)
+    define('DB_PASS_SETUP', '');     // Contraseña del usuario de setup
+    define('DB_NAME_TO_CREATE', 'Sampler_db'); // Nombre de la BD a crear
+    echo "ADVERTENCIA: Usando credenciales y nombre de BD por defecto para setup. Asegúrate de que 'db_config.php' exista y esté configurado para producción.<br>";
 }
 
-mysqli_select_db($conn, $bd);
+// --- Conexión inicial al servidor MySQL (sin especificar una base de datos) ---
+// Para crear la base de datos, a menudo necesitas conectarte sin un DB_NAME inicial,
+// o con un usuario que tenga permisos globales (como root para desarrollo local).
+$conn = new mysqli(defined('DB_HOST') ? DB_HOST : 'localhost',
+                   defined('DB_USER_SETUP') ? DB_USER_SETUP : 'root',
+                   defined('DB_PASS_SETUP') ? DB_PASS_SETUP : '');
 
-$sql = "
-CREATE TABLE IF NOT EXISTS usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario VARCHAR(50) NOT NULL,
-    contrasena VARCHAR(255) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    nombre VARCHAR(100) NOT NULL,
-    apellido VARCHAR(100) NOT NULL,
-    edad INT NOT NULL,
-    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )
-";
+if ($conn->connect_error) {
+    die("Error de conexión al servidor MySQL: " . $conn->connect_error . "<br>");
+}
+echo "Conexión al servidor MySQL exitosa.<br>";
 
-if (mysqli_query($conn, $sql)) {
-    echo "Tabla 'usuarios' creada exitosamente.<br>";
+// --- Crear la Base de Datos ---
+$dbNameToUse = defined('DB_NAME_TO_CREATE') ? DB_NAME_TO_CREATE : (defined('DB_NAME') ? DB_NAME : 'Sampler_db');
+$sql_create_db = "CREATE DATABASE IF NOT EXISTS `$dbNameToUse` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci";
+if ($conn->query($sql_create_db)) {
+    echo "Base de datos '$dbNameToUse' verificada/creada exitosamente.<br>";
 } else {
-    echo "Error al crear la tabla 'usuarios': " . mysqli_error($conn) . "<br>";
+    die("Error al crear la base de datos '$dbNameToUse': " . $conn->error . "<br>");
 }
 
+// --- Seleccionar la Base de Datos ---
+if (!$conn->select_db($dbNameToUse)) {
+    die("Error al seleccionar la base de datos '$dbNameToUse': " . $conn->error . "<br>");
+}
+echo "Base de datos '$dbNameToUse' seleccionada.<br>";
 
-$sql = "
-CREATE TABLE IF NOT EXISTS archivos_audio (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_original VARCHAR(255) NOT NULL,         -- Nombre original del archivo subido por el usuario
-    nombre_servidor VARCHAR(255) NOT NULL UNIQUE,  -- Nombre único del archivo en el servidor (para evitar colisiones)
-    ruta_archivo VARCHAR(512) NOT NULL,            -- Ruta relativa o absoluta al archivo en el servidor
-    tipo_mime VARCHAR(100),                        -- Ej: 'audio/mpeg', 'audio/wav'
-    tamano_bytes BIGINT,                           -- Tamaño del archivo en bytes
-    titulo_audio VARCHAR(255),                     -- Un título legible para el audio (opcional)
-    descripcion_audio TEXT,                        -- Descripción (opcional)
-    id_usuario_subida INT,                         -- Quién subió el archivo (si tienes usuarios)
-    fecha_subida TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    -- Otros campos que necesites: duración, artista, álbum, etc.
-    FOREIGN KEY (id_usuario_subida) REFERENCES usuarios(id) -- Si tienes una tabla de usuarios
+// --- Crear Tabla usuarios ---
+$sql_usuarios = "
+CREATE TABLE IF NOT EXISTS `usuarios` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `usuario` VARCHAR(50) NOT NULL UNIQUE,
+    `contrasena` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(100) NOT NULL UNIQUE,
+    `nombre` VARCHAR(100) NOT NULL,
+    `apellido` VARCHAR(100) NOT NULL,
+    `edad` INT, -- Permitir NULL si no es siempre obligatorio
+    `created_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
-
-if (mysqli_query($conn, $sql)) {
-    echo "Tabla 'archivos_audio' creada exitosamente.<br>";
+if ($conn->query($sql_usuarios)) {
+    echo "Tabla 'usuarios' verificada/creada exitosamente.<br>";
 } else {
-    echo "Error al crear la tabla 'usuarios': " . mysqli_error($conn) . "<br>";
+    echo "Error al crear la tabla 'usuarios': " . $conn->error . "<br>";
 }
 
-mysqli_close($conn);
+// --- Crear Tabla archivos_audio ---
+$sql_archivos_audio = "
+CREATE TABLE IF NOT EXISTS `archivos_audio` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `nombre_original` VARCHAR(255) NOT NULL,
+    `nombre_servidor` VARCHAR(255) NOT NULL UNIQUE,
+    `ruta_archivo` VARCHAR(512) NOT NULL,
+    `tipo_mime` VARCHAR(100),
+    `tamano_bytes` BIGINT,
+    `titulo_audio` VARCHAR(255),
+    `descripcion_audio` TEXT,
+    `id_usuario_subida` INT,
+    `fecha_subida` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (`id_usuario_subida`) REFERENCES `usuarios`(`id`) ON DELETE SET NULL ON UPDATE CASCADE -- Buena práctica añadir acciones ON DELETE/UPDATE
+)";
+if ($conn->query($sql_archivos_audio)) {
+    echo "Tabla 'archivos_audio' verificada/creada exitosamente.<br>";
+} else {
+    // Un error común aquí es si la tabla 'usuarios' no existe o el FOREIGN KEY está mal
+    echo "Error al crear la tabla 'archivos_audio': " . $conn->error . "<br>";
+}
 
+echo "Proceso de configuración de base de datos completado.<br>";
+$conn->close();
 ?>
