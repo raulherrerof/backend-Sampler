@@ -1,28 +1,20 @@
 <?php
-// setup_database.php (Ejecutar una vez para configurar la BD y las tablas)
-
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Incluye tu configuración de credenciales (donde defines DB_HOST, DB_USER, DB_PASS)
-// DB_NAME aquí será el nombre de la base de datos que quieres crear.
-if (file_exists(__DIR__ . '/config/db_config.php')) { // Asumiendo que está en una subcarpeta 'config'
+if (file_exists(__DIR__ . '/config/db_config.php')) { 
     require_once __DIR__ . '/config/db_config.php';
-} else if (file_exists(__DIR__ . '/db_config.php')) { // O en la misma carpeta
+} else if (file_exists(__DIR__ . '/db_config.php')) { 
     require_once __DIR__ . '/db_config.php';
 } else {
-    // Definiciones por defecto si db_config.php no se encuentra
-    // (ESTO ES SOLO PARA FACILITAR LA PRUEBA INICIAL, NO PARA PRODUCCIÓN)
+
     define('DB_HOST', 'localhost');
-    define('DB_USER_SETUP', 'root'); // Usuario con permisos para CREAR DATABASE (a menudo root)
-    define('DB_PASS_SETUP', '');     // Contraseña del usuario de setup
-    define('DB_NAME_TO_CREATE', 'Sampler_db'); // Nombre de la BD a crear
+    define('DB_USER_SETUP', 'root'); 
+    define('DB_PASS_SETUP', '');     
+    define('DB_NAME_TO_CREATE', 'Sampler_db'); 
     echo "ADVERTENCIA: Usando credenciales y nombre de BD por defecto para setup. Asegúrate de que 'db_config.php' exista y esté configurado para producción.<br>";
 }
 
-// --- Conexión inicial al servidor MySQL (sin especificar una base de datos) ---
-// Para crear la base de datos, a menudo necesitas conectarte sin un DB_NAME inicial,
-// o con un usuario que tenga permisos globales (como root para desarrollo local).
 $conn = new mysqli(defined('DB_HOST') ? DB_HOST : 'localhost',
                    defined('DB_USER_SETUP') ? DB_USER_SETUP : 'root',
                    defined('DB_PASS_SETUP') ? DB_PASS_SETUP : '');
@@ -32,7 +24,7 @@ if ($conn->connect_error) {
 }
 echo "Conexión al servidor MySQL exitosa.<br>";
 
-// --- Crear la Base de Datos ---
+
 $dbNameToUse = defined('DB_NAME_TO_CREATE') ? DB_NAME_TO_CREATE : (defined('DB_NAME') ? DB_NAME : 'Sampler_db');
 $sql_create_db = "CREATE DATABASE IF NOT EXISTS `$dbNameToUse` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci";
 if ($conn->query($sql_create_db)) {
@@ -41,13 +33,13 @@ if ($conn->query($sql_create_db)) {
     die("Error al crear la base de datos '$dbNameToUse': " . $conn->error . "<br>");
 }
 
-// --- Seleccionar la Base de Datos ---
+
 if (!$conn->select_db($dbNameToUse)) {
     die("Error al seleccionar la base de datos '$dbNameToUse': " . $conn->error . "<br>");
 }
 echo "Base de datos '$dbNameToUse' seleccionada.<br>";
 
-// --- Crear Tabla usuarios ---
+
 $sql_usuarios = "
 CREATE TABLE IF NOT EXISTS `usuarios` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
@@ -65,7 +57,7 @@ if ($conn->query($sql_usuarios)) {
     echo "Error al crear la tabla 'usuarios': " . $conn->error . "<br>";
 }
 
-// --- Crear Tabla archivos_audio ---
+
 $sql_archivos_audio = "
 CREATE TABLE IF NOT EXISTS `archivos_audio` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
@@ -83,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `archivos_audio` (
 if ($conn->query($sql_archivos_audio)) {
     echo "Tabla 'archivos_audio' verificada/creada exitosamente.<br>";
 } else {
-    // Un error común aquí es si la tabla 'usuarios' no existe o el FOREIGN KEY está mal
+   
     echo "Error al crear la tabla 'archivos_audio': " . $conn->error . "<br>";
 }
 

@@ -1,18 +1,8 @@
 <?php
-// sampler-backend/api/register.php
 
-// 1. CORS HEADERS
 require_once __DIR__ . '/../config/cors_headers.php';
-
-// 2. SESSION (No es estrictamente necesario para registrar, pero si lo usas para algo más)
-// if (session_status() == PHP_SESSION_NONE) {
-//     session_start();
-// }
-
-// 3. DB CONNECTION
 require_once __DIR__ . '/../config/db_connection.php';
 
-// 4. CONTENT-TYPE
 header('Content-Type: application/json');
 
 $db = connect();
@@ -26,14 +16,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $data = json_decode(file_get_contents("php://input"));
 
-// Validaciones (el frontend debería enviar estos campos)
+
 if (
     !$data ||
     !isset($data->username) || empty(trim($data->username)) ||
     !isset($data->password) || empty($data->password) ||
     !isset($data->email) || !filter_var(trim($data->email), FILTER_VALIDATE_EMAIL) ||
-    !isset($data->name) || empty(trim($data->name)) // Asumo que 'nombre' es 'name' en el frontend
-    // !isset($data->apellido) || empty(trim($data->apellido)) // Añade si es obligatorio
+    !isset($data->name) || empty(trim($data->name)) 
+    
 ) {
     http_response_code(400);
     echo json_encode(['error' => 'Datos incompletos o inválidos. Usuario, email, contraseña y nombre son requeridos.']);
@@ -43,9 +33,9 @@ if (
 
 $usuario = $db->real_escape_string(trim($data->username));
 $email = $db->real_escape_string(trim($data->email));
-$nombre = $db->real_escape_string(trim($data->name)); // Asumiendo 'name' del frontend
-$apellido = isset($data->lastName) ? $db->real_escape_string(trim($data->lastName)) : ''; // Asumiendo 'lastName', opcional
-// $edad = isset($data->edad) && is_numeric($data->edad) ? (int)$data->edad : null; // Si envías edad
+$nombre = $db->real_escape_string(trim($data->name)); 
+$apellido = isset($data->lastName) ? $db->real_escape_string(trim($data->lastName)) : ''; 
+
 
 $contrasena_hash = password_hash($data->password, PASSWORD_DEFAULT);
 if ($contrasena_hash === false) {
@@ -56,13 +46,13 @@ if ($contrasena_hash === false) {
 }
 
 $stmt_check = $db->prepare("SELECT id FROM usuarios WHERE usuario = ? OR email = ?");
-if(!$stmt_check) { /* ... manejo de error ... */ $db->close(); exit; }
+if(!$stmt_check) { $db->close(); exit; }
 $stmt_check->bind_param("ss", $usuario, $email);
 $stmt_check->execute();
 $result_check = $stmt_check->get_result();
 
 if ($result_check->num_rows > 0) {
-    http_response_code(409); // Conflict
+    http_response_code(409); 
     echo json_encode(['error' => 'El nombre de usuario o el email ya están registrados.']);
     $stmt_check->close();
     $db->close();
@@ -70,9 +60,7 @@ if ($result_check->num_rows > 0) {
 }
 $stmt_check->close();
 
-// Ajusta la consulta INSERT y bind_param según las columnas de tu tabla 'usuarios'
-// El createdb.php tiene: id, usuario, contrasena, email, nombre, apellido, edad, created_date
-// Asumimos que 'apellido' y 'edad' pueden ser opcionales o no enviados por el formulario básico de registro.
+
 $stmt = $db->prepare("INSERT INTO usuarios (usuario, contrasena, email, nombre, apellido) VALUES (?, ?, ?, ?, ?)");
 if (!$stmt) {
     http_response_code(500);
@@ -80,15 +68,15 @@ if (!$stmt) {
     $db->close();
     exit;
 }
-// Si apellido es opcional y puede ser NULL en la BD, o no lo tienes en la tabla, ajusta.
+
 $stmt->bind_param("sssss", $usuario, $contrasena_hash, $email, $nombre, $apellido);
 
 if ($stmt->execute()) {
-    http_response_code(201); // Created
+    http_response_code(201); 
     echo json_encode([
         'message' => 'Usuario registrado exitosamente.',
-        'userId' => $stmt->insert_id, // Cambiado de 'id_usuario'
-        'username' => $usuario        // Cambiado de 'usuario'
+        'userId' => $stmt->insert_id, 
+        'username' => $usuario        
     ]);
 } else {
     http_response_code(500);
