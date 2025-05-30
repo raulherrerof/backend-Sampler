@@ -21,20 +21,18 @@ if (
     !$data ||
     !isset($data->username) || empty(trim($data->username)) ||
     !isset($data->password) || empty($data->password) ||
-    !isset($data->email) || !filter_var(trim($data->email), FILTER_VALIDATE_EMAIL) ||
-    !isset($data->name) || empty(trim($data->name)) 
+    !isset($data->email) || !filter_var(trim($data->email), FILTER_VALIDATE_EMAIL)
+
     
 ) {
     http_response_code(400);
-    echo json_encode(['error' => 'Datos incompletos o inválidos. Usuario, email, contraseña y nombre son requeridos.']);
+    echo json_encode(['error' => 'Datos incompletos o inválidos. Usuario, email y contraseña son requeridos.']);
     $db->close();
     exit;
 }
 
 $usuario = $db->real_escape_string(trim($data->username));
 $email = $db->real_escape_string(trim($data->email));
-$nombre = $db->real_escape_string(trim($data->name)); 
-$apellido = isset($data->lastName) ? $db->real_escape_string(trim($data->lastName)) : ''; 
 
 
 $contrasena_hash = password_hash($data->password, PASSWORD_DEFAULT);
@@ -61,7 +59,7 @@ if ($result_check->num_rows > 0) {
 $stmt_check->close();
 
 
-$stmt = $db->prepare("INSERT INTO usuarios (usuario, contrasena, email, nombre, apellido) VALUES (?, ?, ?, ?, ?)");
+$stmt = $db->prepare("INSERT INTO usuarios (usuario, contrasena, email) VALUES (?, ?, ?)");
 if (!$stmt) {
     http_response_code(500);
     echo json_encode(['error' => 'Error al preparar la consulta de inserción: ' . $db->error]);
@@ -69,7 +67,7 @@ if (!$stmt) {
     exit;
 }
 
-$stmt->bind_param("sssss", $usuario, $contrasena_hash, $email, $nombre, $apellido);
+$stmt->bind_param("sss", $usuario, $contrasena_hash, $email);
 
 if ($stmt->execute()) {
     http_response_code(201); 
@@ -82,6 +80,7 @@ if ($stmt->execute()) {
     http_response_code(500);
     echo json_encode(['error' => 'Error al registrar el usuario: ' . $stmt->error]);
 }
+
 
 $stmt->close();
 $db->close();

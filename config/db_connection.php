@@ -8,9 +8,10 @@ function connect() {
     $conn = new mysqli($host, $user, $password, $db);
 
     if ($conn->connect_error) {
-        http_response_code(500); 
-        error_log("Error de conexión a la base de datos (" . $db . "): " . $conn->connect_error);
-        die(json_encode(['error' => 'Error de conexión a la base de datos. Intente más tarde.']));
+    http_response_code(500);
+    error_log("Error de conexión a la base de datos (" . $db . "): " . $conn->connect_error);
+    echo json_encode(['error' => 'Error de conexión a la base de datos. Intente más tarde.']);
+    exit;
     }
 
     if (!$conn->set_charset("utf8mb4")) {
