@@ -1,0 +1,532 @@
+[03-Jun-2025 13:09:47 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:09:47 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:09:47 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:09:47 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:09:47 Europe/Berlin] Error CRÍTICO en songs.php: Table 'sampler_db.songs' doesn't exist - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(33): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 13:09:47 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:09:47 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:09:47 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:09:47 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:09:47 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:09:47 Europe/Berlin] Error CRÍTICO en songs.php: Table 'sampler_db.songs' doesn't exist - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(33): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 13:09:47 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:10:05 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:10:05 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:10:05 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:10:05 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:10:05 Europe/Berlin] Error CRÍTICO en songs.php: Table 'sampler_db.songs' doesn't exist - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(33): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 13:10:05 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:10:05 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:10:05 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:10:05 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:10:05 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:10:05 Europe/Berlin] Error CRÍTICO en songs.php: Table 'sampler_db.songs' doesn't exist - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(33): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 13:10:05 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:11:21 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:11:21 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:11:21 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:11:21 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:11:21 Europe/Berlin] Error CRÍTICO en songs.php: Table 'sampler_db.songs' doesn't exist - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(33): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 13:11:21 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:11:21 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:11:21 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:11:21 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:11:21 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:11:21 Europe/Berlin] Error CRÍTICO en songs.php: Table 'sampler_db.songs' doesn't exist - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(33): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 13:11:21 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:17:26 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:17:26 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:17:26 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:17:26 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 13
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 13, audioUrl de BD: uploads/audio/audio_683ed873f0ee91.14996912.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 13: http://localhost/backend-Sampler/uploads/covers/cover_683ed873f0ee20.66653137.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 13: http://localhost/backend-Sampler/uploads/audio/audio_683ed873f0ee91.14996912.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 12, audioUrl de BD: uploads/audio/audio_683ed829f39565.50063953.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 12: http://localhost/backend-Sampler/uploads/covers/cover_683ed829f394e8.47211550.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 12: http://localhost/backend-Sampler/uploads/audio/audio_683ed829f39565.50063953.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 11, audioUrl de BD: uploads/audio/audio_683ed64d623b70.92254878.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 11: http://localhost/backend-Sampler/uploads/covers/cover_683ed64d623b15.97965362.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 11: http://localhost/backend-Sampler/uploads/audio/audio_683ed64d623b70.92254878.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 10, audioUrl de BD: uploads/audio/audio_683ed552848934.33585166.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 10: http://localhost/backend-Sampler/uploads/covers/cover_683ed552848892.14174948.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 10: http://localhost/backend-Sampler/uploads/audio/audio_683ed552848934.33585166.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 9, audioUrl de BD: uploads/audio/audio_683ed494337e45.30333750.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 9: http://localhost/backend-Sampler/uploads/covers/cover_683ed494337dc7.27084967.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 9: http://localhost/backend-Sampler/uploads/audio/audio_683ed494337e45.30333750.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 8, audioUrl de BD: uploads/audio/audio_683ed32db5f263.03312547.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 8: http://localhost/backend-Sampler/uploads/covers/cover_683ed32db5f1b9.50491410.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 8: http://localhost/backend-Sampler/uploads/audio/audio_683ed32db5f263.03312547.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 7, audioUrl de BD: uploads/audio/audio_683ed1b44e0150.65215601.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 7: http://localhost/backend-Sampler/uploads/covers/cover_683ed1b44e0091.18740772.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 7: http://localhost/backend-Sampler/uploads/audio/audio_683ed1b44e0150.65215601.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 6, audioUrl de BD: uploads/audio/audio_683ed10084b587.65084999.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 6: http://localhost/backend-Sampler/uploads/covers/cover_683ed10084b4e0.45072794.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 6: http://localhost/backend-Sampler/uploads/audio/audio_683ed10084b587.65084999.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 5, audioUrl de BD: uploads/audio/audio_683ed06f627582.00165395.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 5: http://localhost/backend-Sampler/uploads/covers/cover_683ed06f6274e0.65538286.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 5: http://localhost/backend-Sampler/uploads/audio/audio_683ed06f627582.00165395.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 4, audioUrl de BD: uploads/audio/audio_683ecfe4b162e5.78517306.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 4: http://localhost/backend-Sampler/uploads/covers/cover_683ecfe4b161e9.11281464.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 4: http://localhost/backend-Sampler/uploads/audio/audio_683ecfe4b162e5.78517306.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 3, audioUrl de BD: uploads/audio/audio_683ecf49871252.72606848.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/covers/cover_683ecf498711a9.53788589.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/audio/audio_683ecf49871252.72606848.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ecdbadf5586.39352339.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ecdbadf54e5.64983256.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ecdbadf5586.39352339.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 1, audioUrl de BD: uploads/audio/audio_683ecbce19a655.90742783.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/covers/cover_683ecbce19a5d7.25986037.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/audio/audio_683ecbce19a655.90742783.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed873f0ee20.66653137.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed873f0ee20.66653137.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed873f0ee91.14996912.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:11:47
+        )
+
+    [1] => Array
+        (
+            [id] => 12
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed829f394e8.47211550.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed829f394e8.47211550.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed829f39565.50063953.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:10:33
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed64d623b15.97965362.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed64d623b15.97965362.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed64d623b70.92254878.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:02:37
+        )
+
+    [3] => Array
+        (
+            [id] => 10
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed552848892.14174948.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed552848892.14174948.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed552848934.33585166.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:58:26
+        )
+
+    [4] => Array
+        (
+            [id] => 9
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed494337dc7.27084967.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed494337dc7.27084967.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed494337e45.30333750.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:55:16
+        )
+
+    [5] => Array
+        (
+            [id] => 8
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed32db5f1b9.50491410.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed32db5f1b9.50491410.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed32db5f263.03312547.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:49:17
+        )
+
+    [6] => Array
+        (
+            [id] => 7
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed1b44e0091.18740772.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed1b44e0091.18740772.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed1b44e0150.65215601.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:43:00
+        )
+
+    [7] => Array
+        (
+            [id] => 6
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed10084b4e0.45072794.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed10084b4e0.45072794.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed10084b587.65084999.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:40:00
+        )
+
+    [8] => Array
+        (
+            [id] => 5
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed06f6274e0.65538286.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed06f6274e0.65538286.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed06f627582.00165395.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:37:35
+        )
+
+    [9] => Array
+        (
+            [id] => 4
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecfe4b161e9.11281464.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecfe4b161e9.11281464.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecfe4b162e5.78517306.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:35:16
+        )
+
+    [10] => Array
+        (
+            [id] => 3
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecf498711a9.53788589.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecf498711a9.53788589.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecf49871252.72606848.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:32:41
+        )
+
+    [11] => Array
+        (
+            [id] => 2
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecdbadf54e5.64983256.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecdbadf54e5.64983256.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecdbadf5586.39352339.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:26:02
+        )
+
+    [12] => Array
+        (
+            [id] => 1
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecbce19a5d7.25986037.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecbce19a5d7.25986037.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecbce19a655.90742783.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:17:50
+        )
+
+)
+
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:17:26 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:17:26 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:17:26 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:17:26 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 13
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 13, audioUrl de BD: uploads/audio/audio_683ed873f0ee91.14996912.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 13: http://localhost/backend-Sampler/uploads/covers/cover_683ed873f0ee20.66653137.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 13: http://localhost/backend-Sampler/uploads/audio/audio_683ed873f0ee91.14996912.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 12, audioUrl de BD: uploads/audio/audio_683ed829f39565.50063953.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 12: http://localhost/backend-Sampler/uploads/covers/cover_683ed829f394e8.47211550.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 12: http://localhost/backend-Sampler/uploads/audio/audio_683ed829f39565.50063953.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 11, audioUrl de BD: uploads/audio/audio_683ed64d623b70.92254878.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 11: http://localhost/backend-Sampler/uploads/covers/cover_683ed64d623b15.97965362.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 11: http://localhost/backend-Sampler/uploads/audio/audio_683ed64d623b70.92254878.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 10, audioUrl de BD: uploads/audio/audio_683ed552848934.33585166.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 10: http://localhost/backend-Sampler/uploads/covers/cover_683ed552848892.14174948.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 10: http://localhost/backend-Sampler/uploads/audio/audio_683ed552848934.33585166.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 9, audioUrl de BD: uploads/audio/audio_683ed494337e45.30333750.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 9: http://localhost/backend-Sampler/uploads/covers/cover_683ed494337dc7.27084967.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 9: http://localhost/backend-Sampler/uploads/audio/audio_683ed494337e45.30333750.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 8, audioUrl de BD: uploads/audio/audio_683ed32db5f263.03312547.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 8: http://localhost/backend-Sampler/uploads/covers/cover_683ed32db5f1b9.50491410.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 8: http://localhost/backend-Sampler/uploads/audio/audio_683ed32db5f263.03312547.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 7, audioUrl de BD: uploads/audio/audio_683ed1b44e0150.65215601.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 7: http://localhost/backend-Sampler/uploads/covers/cover_683ed1b44e0091.18740772.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 7: http://localhost/backend-Sampler/uploads/audio/audio_683ed1b44e0150.65215601.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 6, audioUrl de BD: uploads/audio/audio_683ed10084b587.65084999.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 6: http://localhost/backend-Sampler/uploads/covers/cover_683ed10084b4e0.45072794.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 6: http://localhost/backend-Sampler/uploads/audio/audio_683ed10084b587.65084999.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 5, audioUrl de BD: uploads/audio/audio_683ed06f627582.00165395.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 5: http://localhost/backend-Sampler/uploads/covers/cover_683ed06f6274e0.65538286.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 5: http://localhost/backend-Sampler/uploads/audio/audio_683ed06f627582.00165395.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 4, audioUrl de BD: uploads/audio/audio_683ecfe4b162e5.78517306.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 4: http://localhost/backend-Sampler/uploads/covers/cover_683ecfe4b161e9.11281464.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 4: http://localhost/backend-Sampler/uploads/audio/audio_683ecfe4b162e5.78517306.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 3, audioUrl de BD: uploads/audio/audio_683ecf49871252.72606848.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/covers/cover_683ecf498711a9.53788589.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/audio/audio_683ecf49871252.72606848.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ecdbadf5586.39352339.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ecdbadf54e5.64983256.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ecdbadf5586.39352339.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Procesando fila ID: 1, audioUrl de BD: uploads/audio/audio_683ecbce19a655.90742783.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - albumArtUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/covers/cover_683ecbce19a5d7.25986037.png
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - audioUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/audio/audio_683ecbce19a655.90742783.mp3
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed873f0ee20.66653137.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed873f0ee20.66653137.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed873f0ee91.14996912.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:11:47
+        )
+
+    [1] => Array
+        (
+            [id] => 12
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed829f394e8.47211550.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed829f394e8.47211550.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed829f39565.50063953.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:10:33
+        )
+
+    [2] => Array
+        (
+            [id] => 11
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed64d623b15.97965362.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed64d623b15.97965362.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed64d623b70.92254878.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:02:37
+        )
+
+    [3] => Array
+        (
+            [id] => 10
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed552848892.14174948.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed552848892.14174948.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed552848934.33585166.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:58:26
+        )
+
+    [4] => Array
+        (
+            [id] => 9
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed494337dc7.27084967.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed494337dc7.27084967.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed494337e45.30333750.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:55:16
+        )
+
+    [5] => Array
+        (
+            [id] => 8
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed32db5f1b9.50491410.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed32db5f1b9.50491410.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed32db5f263.03312547.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:49:17
+        )
+
+    [6] => Array
+        (
+            [id] => 7
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed1b44e0091.18740772.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed1b44e0091.18740772.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed1b44e0150.65215601.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:43:00
+        )
+
+    [7] => Array
+        (
+            [id] => 6
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed10084b4e0.45072794.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed10084b4e0.45072794.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed10084b587.65084999.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:40:00
+        )
+
+    [8] => Array
+        (
+            [id] => 5
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ed06f6274e0.65538286.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ed06f6274e0.65538286.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ed06f627582.00165395.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:37:35
+        )
+
+    [9] => Array
+        (
+            [id] => 4
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecfe4b161e9.11281464.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecfe4b161e9.11281464.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecfe4b162e5.78517306.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:35:16
+        )
+
+    [10] => Array
+        (
+            [id] => 3
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecf498711a9.53788589.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecf498711a9.53788589.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecf49871252.72606848.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:32:41
+        )
+
+    [11] => Array
+        (
+            [id] => 2
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecdbadf54e5.64983256.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecdbadf54e5.64983256.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecdbadf5586.39352339.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:26:02
+        )
+
+    [12] => Array
+        (
+            [id] => 1
+            [title] => Alakran
+            [artist] => Feid
+            [featuredArtists] => Ferxxo
+            [genre] => Reggaeton
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ecbce19a5d7.25986037.png
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ecbce19a5d7.25986037.png
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ecbce19a655.90742783.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 12:17:50
+        )
+
+)
+
+[03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Conexión a BD cerrada.

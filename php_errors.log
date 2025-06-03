@@ -1,0 +1,8 @@
+[03-Jun-2025 12:42:45 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(31): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:42:45 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(31): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:49:00 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(31): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:49:00 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(31): mysqli->query('SELECT id, titl...')
+#1 {main}

@@ -1,105 +1,106 @@
 <?php
 // sampler-backend/api/songs.php
 
-// 1. INCLUIR CABECERAS CORS PRIMERO Y ANTES DE CUALQUIER OTRA SALIDA
-require_once __DIR__ . '/../config/cors_headers.php';
+// --- HABILITAR LOGS (SOLO PARA DESARROLLO) ---
+ini_set('log_errors', 1);
+// Asegúrate de que la carpeta backend-Sampler tenga permisos de escritura para este archivo
+ini_set('error_log', __DIR__ . '/../php_debug.log'); 
+error_reporting(E_ALL);
+error_log("--- Ejecutando songs.php ---");
+// --- FIN HABILITAR LOGS ---
 
-// 2. SESSION (Opcional aquí, ya que listar canciones podría ser público)
-// if (session_status() == PHP_SESSION_NONE) {
-//     session_start();
-// }
+// 1. INCLUIR CABECERAS CORS PRIMERO
+require_once __DIR__ . '/../config/cors_headers.php'; // Asume que este archivo está configurado correctamente
 
-// 3. INCLUIR CONEXIÓN A BD
-require_once __DIR__ . '/../config/db_connection.php'; // Asume que define la función connect()
+// 3. INCLUIR CONEXIÓN A BD (que a su vez incluye db_config.php con constantes)
+require_once __DIR__ . '/../config/db_connection.php'; 
 
 // 4. ESTABLECER CONTENT-TYPE PARA LA RESPUESTA JSON
 header('Content-Type: application/json');
 
-$db = null;
-$songs_list = [];
+$db = null; 
+$songs_list_for_json = [];
 
 try {
-    $db = connect(); // Obtener la conexión a la base de datos
-    // connect() debería manejar el fallo de conexión y salir, o lanzar una excepción.
-    // Si connect() puede devolver false/null sin salir, la siguiente verificación es útil.
-    if (!$db) {
-        throw new Exception("No se pudo establecer la conexión a la base de datos.");
-    }
+    $db = connect(); // No se pasan parámetros, usará las constantes
+    // $db ahora es el objeto de conexión con la base de datos seleccionada
 
-    // Consulta para obtener todas las canciones.
-    // Usamos la tabla 'audios' y la columna 'fecha_subida' con un alias.
+    // Asegúrate de que la tabla y las columnas coincidan con tu BD.
     $sql = "SELECT id, title, artist, featuredArtists, genre, albumArtUrl, audioUrl, duration, userId, fecha_subida AS createdAt
-            FROM audios
-            ORDER BY fecha_subida DESC"; // Ordenar por la columna real de la BD
+            FROM audios  
+            ORDER BY fecha_subida DESC"; 
     
     $result = $db->query($sql);
 
     if ($result) {
-        // Determinar la URL base del servidor/proyecto para construir URLs absolutas
-        // Esto asume que tus archivos de audio/covers están servidos desde el mismo dominio/path que tu API PHP.
-        // Si están en un CDN o un dominio diferente, esta lógica necesitará cambiar.
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
-        $host = $_SERVER['HTTP_HOST'];
-        // Asumiendo que tu backend está en una subcarpeta como /backend-Sampler/
-        // Si tu backend está en la raíz del dominio, $projectBasePath podría ser "" o "/"
-        // Ajusta esto según la estructura de URL de tu proyecto.
-        $projectBasePath = '/backend-Sampler'; // Cambia 'backend-Sampler' al nombre de tu carpeta de proyecto en htdocs
-        $baseUrl = rtrim($protocol . $host . rtrim($projectBasePath, '/'), '/');
+        error_log("songs.php - Consulta SQL ejecutada. Filas obtenidas: " . $result->num_rows);
 
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
+        $host = $_SERVER['HTTP_HOST']; 
+        $webRootPathForUploads = '/backend-Sampler'; // AJUSTA SI TU CARPETA BACKEND NO ES 'backend-Sampler' en la URL
+        
+        $baseFileAccessUrl = rtrim($protocol . $host . $webRootPathForUploads, '/');
+        error_log("songs.php - BaseFileAccessUrl: " . $baseFileAccessUrl);
 
         while ($row = $result->fetch_assoc()) {
+            error_log("songs.php - Procesando fila ID: " . ($row['id'] ?? 'N/A') . ", audioUrl de BD: " . ($row['audioUrl'] ?? 'N/A'));
+
             $processed_album_art_url = null;
             if (isset($row['albumArtUrl']) && !empty($row['albumArtUrl'])) {
                 if (preg_match('/^https?:\/\//i', $row['albumArtUrl'])) {
-                    $processed_album_art_url = $row['albumArtUrl']; // Ya es una URL absoluta
+                    $processed_album_art_url = $row['albumArtUrl']; 
                 } else {
-                    // Asume que $row['albumArtUrl'] es como 'uploads/covers/imagen.jpg'
-                    $processed_album_art_url = $baseUrl . '/' . ltrim($row['albumArtUrl'], '/');
+                    $path_from_db_art = ltrim($row['albumArtUrl'], '/');
+                    $processed_album_art_url = $baseFileAccessUrl . '/' . $path_from_db_art;
                 }
+                error_log("songs.php - albumArtUrl procesada para ID " . ($row['id'] ?? 'N/A') . ": " . ($processed_album_art_url ?? 'N/A'));
             }
 
             $processed_audio_url = null;
             if (isset($row['audioUrl']) && !empty($row['audioUrl'])) {
                 if (preg_match('/^https?:\/\//i', $row['audioUrl'])) {
-                    $processed_audio_url = $row['audioUrl']; // Ya es una URL absoluta
+                    $processed_audio_url = $row['audioUrl']; 
                 } else {
-                    // Asume que $row['audioUrl'] es como 'uploads/audio/track.mp3'
-                    $processed_audio_url = $baseUrl . '/' . ltrim($row['audioUrl'], '/');
+                    $path_from_db_audio = ltrim($row['audioUrl'], '/');
+                    $processed_audio_url = $baseFileAccessUrl . '/' . $path_from_db_audio;
                 }
+                error_log("songs.php - audioUrl procesada para ID " . ($row['id'] ?? 'N/A') . ": " . ($processed_audio_url ?? 'N/A'));
             }
             
             $song_item = [
-                'id' => (int) $row['id'],
+                'id' => (int) ($row['id'] ?? 0),
                 'title' => $row['title'] ?? 'Título Desconocido',
                 'artist' => $row['artist'] ?? 'Artista Desconocido',
                 'featuredArtists' => $row['featuredArtists'] ?? null,
                 'genre' => $row['genre'] ?? null,
-                'albumArtUrl' => $processed_album_art_url,  // URL procesada
-                'albumArt' => $processed_album_art_url,     // Para compatibilidad con SongPlayer
-                'audioUrl' => $processed_audio_url,       // URL procesada
-                'duration' => isset($row['duration']) ? (int)$row['duration'] : 0, // Entero (segundos) o 0
+                'albumArtUrl' => $processed_album_art_url,
+                'albumArt' => $processed_album_art_url, 
+                'audioUrl' => $processed_audio_url, 
+                'duration' => $row['duration'] ?? '0:00',
                 'userId' => isset($row['userId']) ? (int)$row['userId'] : null,
-                'createdAt' => $row['createdAt'] ?? null // Viene del alias 'fecha_subida AS createdAt'
+                'createdAt' => $row['createdAt'] ?? null
             ];
-            $songs_list[] = $song_item;
+            $songs_list_for_json[] = $song_item;
         }
         $result->free();
         
         http_response_code(200);
-        echo json_encode($songs_list); // Devolver directamente el array de canciones
+        error_log("songs.php - Enviando respuesta JSON: " . print_r($songs_list_for_json, true));
+        echo json_encode($songs_list_for_json);
 
     } else {
-        // Error en la consulta SQL
+        error_log("songs.php - Error en la consulta SQL: " . $db->error);
         throw new Exception("Error al ejecutar la consulta de canciones: " . $db->error);
     }
 
 } catch (Exception $e) {
-    http_response_code(500); // Internal Server Error
-    error_log("Error en songs.php: " . $e->getMessage() . " - Trace: " . $e->getTraceAsString()); // Loguear más detalles
+    http_response_code(500);
+    error_log("Error CRÍTICO en songs.php: " . $e->getMessage() . " - Trace: " . $e->getTraceAsString());
     echo json_encode(['error' => 'Ocurrió un error al obtener las canciones.', 'details_server' => $e->getMessage()]);
 } finally {
     if ($db instanceof mysqli) {
         $db->close();
+        error_log("songs.php - Conexión a BD cerrada.");
     }
 }
 ?>

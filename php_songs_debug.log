@@ -1,0 +1,44 @@
+[03-Jun-2025 12:53:10 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:53:10 Europe/Berlin] songs.php - Conexión a BD exitosa.
+[03-Jun-2025 12:53:10 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(35): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:53:10 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 12:53:10 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:53:10 Europe/Berlin] songs.php - Conexión a BD exitosa.
+[03-Jun-2025 12:53:10 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(35): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:53:10 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 12:54:55 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:54:55 Europe/Berlin] songs.php - Conexión a BD exitosa.
+[03-Jun-2025 12:54:55 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(35): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:54:55 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 12:54:55 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:54:55 Europe/Berlin] songs.php - Conexión a BD exitosa.
+[03-Jun-2025 12:54:55 Europe/Berlin] Error CRÍTICO en songs.php: No database selected - Trace: #0 C:\xampp\htdocs\backend-Sampler\api\songs.php(35): mysqli->query('SELECT id, titl...')
+#1 {main}
+[03-Jun-2025 12:54:55 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 12:57:42 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:57:42 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
+[03-Jun-2025 12:57:42 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 12:57:42 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
+[03-Jun-2025 12:57:42 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:57:42 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
+[03-Jun-2025 12:57:42 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 12:57:42 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
+[03-Jun-2025 12:58:11 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:58:11 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
+[03-Jun-2025 12:58:11 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 12:58:11 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
+[03-Jun-2025 12:58:11 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 12:58:11 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
+[03-Jun-2025 12:58:11 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 12:58:11 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
+[03-Jun-2025 13:02:22 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
+[03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
+[03-Jun-2025 13:02:22 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
+[03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
