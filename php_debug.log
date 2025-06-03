@@ -530,3 +530,329 @@
 )
 
 [03-Jun-2025 13:17:26 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:30:06 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:30:06 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:30:06 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:30:06 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 1
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - Procesando fila ID: 1, audioUrl de BD: uploads/audio/audio_683ec09182bf47.84323217.mp3
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - albumArtUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/covers/cover_683ec09182be96.20370898.jpg
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - audioUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/audio/audio_683ec09182bf47.84323217.mp3
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => Raulillo
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ec09182be96.20370898.jpg
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ec09182be96.20370898.jpg
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ec09182bf47.84323217.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 11:29:53
+        )
+
+)
+
+[03-Jun-2025 13:30:06 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:30:06 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:30:07 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:30:07 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:30:07 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 1
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - Procesando fila ID: 1, audioUrl de BD: uploads/audio/audio_683ec09182bf47.84323217.mp3
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - albumArtUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/covers/cover_683ec09182be96.20370898.jpg
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - audioUrl procesada para ID 1: http://localhost/backend-Sampler/uploads/audio/audio_683ec09182bf47.84323217.mp3
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => Raulillo
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ec09182be96.20370898.jpg
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ec09182be96.20370898.jpg
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ec09182bf47.84323217.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 11:29:53
+        )
+
+)
+
+[03-Jun-2025 13:30:07 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:45:19 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:45:19 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:45:19 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:45:19 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 0
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+)
+
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:45:19 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:45:19 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:45:19 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:45:19 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 0
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+)
+
+[03-Jun-2025 13:45:19 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:48:19 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:48:19 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:48:19 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:48:19 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 1
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:48:14
+        )
+
+)
+
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:48:19 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:48:19 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:48:19 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:48:19 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 1
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:48:14
+        )
+
+)
+
+[03-Jun-2025 13:48:19 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:49:46 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:49:46 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:49:46 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:49:46 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 1
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:48:14
+        )
+
+)
+
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:49:46 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:49:46 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:49:46 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:49:46 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 1
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 2
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:48:14
+        )
+
+)
+
+[03-Jun-2025 13:49:46 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:51:01 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:51:01 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:51:01 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:51:01 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Procesando fila ID: 3, audioUrl de BD: uploads/audio/audio_683ee1a23336b4.15765159.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - albumArtUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/covers/cover_683ee1a2333630.52698818.webp
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - audioUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/audio/audio_683ee1a23336b4.15765159.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [title] => Trap Tremendo (Audio Oficial)
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee1a2333630.52698818.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee1a2333630.52698818.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee1a23336b4.15765159.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:50:58
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:48:14
+        )
+
+)
+
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 13:51:01 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 13:51:01 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 13:51:01 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 13:51:01 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - BaseFileAccessUrl: http://localhost/backend-Sampler
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Procesando fila ID: 3, audioUrl de BD: uploads/audio/audio_683ee1a23336b4.15765159.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - albumArtUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/covers/cover_683ee1a2333630.52698818.webp
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - audioUrl procesada para ID 3: http://localhost/backend-Sampler/uploads/audio/audio_683ee1a23336b4.15765159.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Procesando fila ID: 2, audioUrl de BD: uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - albumArtUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - audioUrl procesada para ID 2: http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Enviando respuesta JSON: Array
+(
+    [0] => Array
+        (
+            [id] => 3
+            [title] => Trap Tremendo (Audio Oficial)
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee1a2333630.52698818.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee1a2333630.52698818.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee1a23336b4.15765159.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:50:58
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Trap Tremendo
+            [artist] => DavidSon
+            [featuredArtists] => SonOfABeat
+            [genre] => Hombres
+            [albumArtUrl] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [albumArt] => http://localhost/backend-Sampler/uploads/covers/cover_683ee0fe0ead16.19260319.webp
+            [audioUrl] => http://localhost/backend-Sampler/uploads/audio/audio_683ee0fe0eae19.84469647.mp3
+            [duration] => 0:00
+            [userId] => 1
+            [createdAt] => 2025-06-03 13:48:14
+        )
+
+)
+
+[03-Jun-2025 13:51:01 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 17:40:26 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[03-Jun-2025 17:40:26 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 17:40:26 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 17:40:26 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 17:40:26 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[03-Jun-2025 17:40:26 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 17:40:26 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 17:40:26 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[03-Jun-2025 17:40:26 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 17:50:24 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 17:50:24 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[03-Jun-2025 17:50:24 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 17:50:24 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 17:50:24 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 17:50:24 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[03-Jun-2025 17:50:24 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[03-Jun-2025 17:50:24 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[03-Jun-2025 17:50:24 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[03-Jun-2025 17:50:25 Europe/Berlin] --- Ejecutando songs.php ---
+[03-Jun-2025 17:50:25 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[03-Jun-2025 17:50:25 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[03-Jun-2025 17:50:25 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[03-Jun-2025 17:50:25 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[03-Jun-2025 17:50:25 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[03-Jun-2025 17:50:25 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[03-Jun-2025 17:50:25 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[03-Jun-2025 17:50:25 Europe/Berlin] songs.php - Conexión a BD cerrada.

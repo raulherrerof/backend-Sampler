@@ -80,6 +80,24 @@ if ($conn->query($sql_archivos_audio)) {
     echo "Error al crear la tabla 'archivos_audio': " . $conn->error . "<br>";
 }
 
+$sql_song_likes = "
+CREATE TABLE IF NOT EXISTS song_likes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    song_id INT NOT NULL,
+    liked_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES usuarios(id) ON DELETE CASCADE, -- Si se borra el usuario, se borran sus likes
+    FOREIGN KEY (song_id) REFERENCES audios(id) ON DELETE CASCADE,  -- Si se borra la canción, se borran sus likes
+    UNIQUE KEY unique_user_song_like (user_id, song_id) -- Un usuario solo puede likear una canción una vez
+)";
+
+if ($conn->query($sql_song_likes)) {
+    echo "Tabla 'song_likes' verificada/creada exitosamente.<br>";
+} else {
+   
+    echo "Error al crear la tabla 'song_likes': " . $conn->error . "<br>";
+}
+
 echo "Proceso de configuración de base de datos completado.<br>";
 $conn->close();
 ?>
