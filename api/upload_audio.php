@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $coverMime = $_FILES["coverArt"]["type"];
             $coverSize = $_FILES["coverArt"]["size"];
           
-            $stmt_songs = $db->prepare("INSERT INTO songs (title, artist, featuredArtists, genre, albumArtUrl, audioUrl, duration, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt_songs = $db->prepare("INSERT INTO audios (title, artist, featuredArtists, genre, albumArtUrl, audioUrl, duration, userId) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
              if (!$stmt_songs) {
                 http_response_code(500);
                 echo json_encode(['error' => 'Error preparando la inserción de canción: ' . $db->error]);

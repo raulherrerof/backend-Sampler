@@ -59,18 +59,19 @@ if ($conn->query($sql_usuarios)) {
 
 
 $sql_archivos_audio = "
-CREATE TABLE IF NOT EXISTS `archivos_audio` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `nombre_original` VARCHAR(255) NOT NULL,
-    `nombre_servidor` VARCHAR(255) NOT NULL UNIQUE,
-    `ruta_archivo` VARCHAR(512) NOT NULL,
-    `tipo_mime` VARCHAR(100),
-    `tamano_bytes` BIGINT,
-    `titulo_audio` VARCHAR(255),
-    `descripcion_audio` TEXT,
-    `id_usuario_subida` INT,
-    `fecha_subida` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (`id_usuario_subida`) REFERENCES `usuarios`(`id`) ON DELETE SET NULL ON UPDATE CASCADE -- Buena práctica añadir acciones ON DELETE/UPDATE
+CREATE TABLE IF NOT EXISTS audios (
+    id INT AUTO_INCREMENT PRIMARY KEY,                         -- Clave primaria autoincremental
+    title VARCHAR(255) NOT NULL,                               -- Título de la canción/audio
+    artist VARCHAR(255) NOT NULL,                              -- Artista principal
+    featuredArtists TEXT,                                      -- Artistas invitados (puede ser una lista, por eso TEXT)
+    genre VARCHAR(100),                                        -- Género musical
+    albumArtUrl VARCHAR(1024),                                 -- URL de la carátula del álbum (puede ser larga)
+    audioUrl VARCHAR(1024) NOT NULL,                           -- URL del archivo de audio (esencial)
+    duration INT,                                              -- Duración en segundos (o milisegundos, define tu unidad)
+    userId INT,                                                -- ID del usuario que subió/posee el audio
+    fecha_subida TIMESTAMP DEFAULT CURRENT_TIMESTAMP,          -- Fecha de subida/creación del registro
+    -- Opcional: Clave foránea para userId si tienes una tabla de usuarios
+    FOREIGN KEY (userId) REFERENCES usuarios(id) ON DELETE SET NULL ON UPDATE CASCADE
 )";
 if ($conn->query($sql_archivos_audio)) {
     echo "Tabla 'archivos_audio' verificada/creada exitosamente.<br>";
