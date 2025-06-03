@@ -2,7 +2,7 @@
 // sampler-backend/api/songs.php
 
 // 1. INCLUIR CABECERAS CORS PRIMERO Y ANTES DE CUALQUIER OTRA SALIDA
-require_once __DIR__ . '/../config/cors_headers.php'; // Asume que este archivo está configurado correctamente
+require_once __DIR__ . '/../config/cors_headers.php';
 
 // 2. SESSION (Opcional aquí, ya que listar canciones podría ser público)
 // if (session_status() == PHP_SESSION_NONE) {
@@ -15,66 +15,78 @@ require_once __DIR__ . '/../config/db_connection.php'; // Asume que define la fu
 // 4. ESTABLECER CONTENT-TYPE PARA LA RESPUESTA JSON
 header('Content-Type: application/json');
 
-$db = null; // Inicializar para el bloque finally
+$db = null;
 $songs_list = [];
 
 try {
     $db = connect(); // Obtener la conexión a la base de datos
+    // connect() debería manejar el fallo de conexión y salir, o lanzar una excepción.
+    // Si connect() puede devolver false/null sin salir, la siguiente verificación es útil.
     if (!$db) {
-        // connect() ya hace die() o debería lanzar una excepción si no puede conectar,
-        // pero como medida de seguridad adicional:
         throw new Exception("No se pudo establecer la conexión a la base de datos.");
     }
 
     // Consulta para obtener todas las canciones.
-    // ¡¡¡ASEGÚRATE DE QUE 'songs' SEA EL NOMBRE CORRECTO DE TU TABLA!!!
-    // ¡¡¡Y QUE LAS COLUMNAS 'id', 'title', 'artist', 'albumArtUrl', 'audioUrl', 'duration', 'createdAt' EXISTAN!!!
-    // Tu App.jsx espera estos campos. El upload_audio.php también debería insertar con estos nombres.
-    $sql = "SELECT id, title, artist, featuredArtists, genre, albumArtUrl, audioUrl, duration, userId, createdAt 
-            FROM songs 
-            ORDER BY createdAt DESC";
+    // Usamos la tabla 'audios' y la columna 'fecha_subida' con un alias.
+    $sql = "SELECT id, title, artist, featuredArtists, genre, albumArtUrl, audioUrl, duration, userId, fecha_subida AS createdAt
+            FROM audios
+            ORDER BY fecha_subida DESC"; // Ordenar por la columna real de la BD
     
     $result = $db->query($sql);
 
     if ($result) {
-        while ($row = $result->fetch_assoc()) {
-            // Lógica para construir URLs completas si es necesario
-            $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
-            $host = $_SERVER['HTTP_HOST'];
-            
-            // Asume que las URLs en la BD son relativas a la raíz de tu servidor web
-            // donde se sirven los archivos, por ejemplo: /uploads/covers/imagen.jpg
-            // Si ya son URLs completas en la BD, esta lógica no es necesaria.
+        // Determinar la URL base del servidor/proyecto para construir URLs absolutas
+        // Esto asume que tus archivos de audio/covers están servidos desde el mismo dominio/path que tu API PHP.
+        // Si están en un CDN o un dominio diferente, esta lógica necesitará cambiar.
+        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
+        $host = $_SERVER['HTTP_HOST'];
+        // Asumiendo que tu backend está en una subcarpeta como /backend-Sampler/
+        // Si tu backend está en la raíz del dominio, $projectBasePath podría ser "" o "/"
+        // Ajusta esto según la estructura de URL de tu proyecto.
+        $projectBasePath = '/backend-Sampler'; // Cambia 'backend-Sampler' al nombre de tu carpeta de proyecto en htdocs
+        $baseUrl = rtrim($protocol . $host . rtrim($projectBasePath, '/'), '/');
 
-            if (isset($row['albumArtUrl']) && $row['albumArtUrl'] && !preg_match('/^https?:\/\//i', $row['albumArtUrl'])) {
-                $row['albumArtUrl'] = $protocol . $host . (strpos($row['albumArtUrl'], '/') === 0 ? '' : '/') . ltrim($row['albumArtUrl'], '/');
+
+        while ($row = $result->fetch_assoc()) {
+            $processed_album_art_url = null;
+            if (isset($row['albumArtUrl']) && !empty($row['albumArtUrl'])) {
+                if (preg_match('/^https?:\/\//i', $row['albumArtUrl'])) {
+                    $processed_album_art_url = $row['albumArtUrl']; // Ya es una URL absoluta
+                } else {
+                    // Asume que $row['albumArtUrl'] es como 'uploads/covers/imagen.jpg'
+                    $processed_album_art_url = $baseUrl . '/' . ltrim($row['albumArtUrl'], '/');
+                }
             }
-            if (isset($row['audioUrl']) && $row['audioUrl'] && !preg_match('/^https?:\/\//i', $row['audioUrl'])) {
-                $row['audioUrl'] = $protocol . $host . (strpos($row['audioUrl'], '/') === 0 ? '' : '/') . ltrim($row['audioUrl'], '/');
+
+            $processed_audio_url = null;
+            if (isset($row['audioUrl']) && !empty($row['audioUrl'])) {
+                if (preg_match('/^https?:\/\//i', $row['audioUrl'])) {
+                    $processed_audio_url = $row['audioUrl']; // Ya es una URL absoluta
+                } else {
+                    // Asume que $row['audioUrl'] es como 'uploads/audio/track.mp3'
+                    $processed_audio_url = $baseUrl . '/' . ltrim($row['audioUrl'], '/');
+                }
             }
             
-            // Asegurar que los campos esperados por el frontend estén presentes, incluso si son null
             $song_item = [
-                'id' => $row['id'],
+                'id' => (int) $row['id'],
                 'title' => $row['title'] ?? 'Título Desconocido',
                 'artist' => $row['artist'] ?? 'Artista Desconocido',
                 'featuredArtists' => $row['featuredArtists'] ?? null,
                 'genre' => $row['genre'] ?? null,
-                'albumArtUrl' => $row['albumArtUrl'] ?? null, // Frontend espera esto
-                'albumArt' => $row['albumArtUrl'] ?? null,    // Para compatibilidad con el SongPlayer que me pasaste
-                'audioUrl' => $row['audioUrl'] ?? null,
-                'duration' => $row['duration'] ?? '0:00',
-                'userId' => $row['userId'] ?? null,
-                'createdAt' => $row['createdAt'] ?? null
+                'albumArtUrl' => $processed_album_art_url,  // URL procesada
+                'albumArt' => $processed_album_art_url,     // Para compatibilidad con SongPlayer
+                'audioUrl' => $processed_audio_url,       // URL procesada
+                'duration' => isset($row['duration']) ? (int)$row['duration'] : 0, // Entero (segundos) o 0
+                'userId' => isset($row['userId']) ? (int)$row['userId'] : null,
+                'createdAt' => $row['createdAt'] ?? null // Viene del alias 'fecha_subida AS createdAt'
             ];
             $songs_list[] = $song_item;
         }
         $result->free();
         
         http_response_code(200);
-        // Tu App.jsx tiene: setSongs(fetchedSongs.songs || fetchedSongs);
-        // Devolver un array directamente es más simple y compatible con '|| fetchedSongs'.
-        echo json_encode($songs_list); 
+        echo json_encode($songs_list); // Devolver directamente el array de canciones
 
     } else {
         // Error en la consulta SQL
@@ -83,10 +95,10 @@ try {
 
 } catch (Exception $e) {
     http_response_code(500); // Internal Server Error
-    error_log("Error en songs.php: " . $e->getMessage()); // Loguear el error en el servidor
+    error_log("Error en songs.php: " . $e->getMessage() . " - Trace: " . $e->getTraceAsString()); // Loguear más detalles
     echo json_encode(['error' => 'Ocurrió un error al obtener las canciones.', 'details_server' => $e->getMessage()]);
 } finally {
-    if ($db instanceof mysqli) { // Verificar si $db es un objeto mysqli antes de llamar a close
+    if ($db instanceof mysqli) {
         $db->close();
     }
 }
