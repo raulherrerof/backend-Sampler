@@ -98,6 +98,24 @@ if ($conn->query($sql_song_likes)) {
     echo "Error al crear la tabla 'song_likes': " . $conn->error . "<br>";
 }
 
+$sql_comments = "
+CREATE TABLE IF NOT EXISTS `comments` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `song_id` INT NOT NULL,                 -- Referencia al ID de la tabla 'audios'
+    `user_id` INT NOT NULL,                 -- Referencia al ID de la tabla 'usuarios'
+    `comment_text` TEXT NOT NULL,           -- El contenido del comentario
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Fecha de creación
+    FOREIGN KEY (`song_id`) REFERENCES `audios`(`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (`user_id`) REFERENCES `usuarios`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+)";
+
+if ($conn->query($sql_comments)) {
+    echo "Tabla 'comments' verificada/creada exitosamente.<br>";
+} else {
+   
+    echo "Error al crear la tabla 'comments': " . $conn->error . "<br>";
+}
+
 echo "Proceso de configuración de base de datos completado.<br>";
 $conn->close();
 ?>
