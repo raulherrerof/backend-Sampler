@@ -1,156 +1,161 @@
 <?php
 // sampler-backend/api/songs.php
 
-// --- HABILITAR LOGS (SOLO PARA DESARROLLO) ---
 ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . '/../php_debug.log');
+ini_set('error_log', __DIR__ . '/../php_songs_debug.log'); 
 error_reporting(E_ALL);
 error_log("--- Ejecutando songs.php ---");
-// --- FIN HABILITAR LOGS ---
 
-// 1. INCLUIR CABECERAS CORS PRIMERO
 require_once __DIR__ . '/../config/cors_headers.php';
 
-// Iniciar sesión si no está activa para poder verificar el estado de "like" del usuario
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-// 3. INCLUIR CONEXIÓN A BD
 require_once __DIR__ . '/../config/db_connection.php';
-
-// 4. ESTABLECER CONTENT-TYPE PARA LA RESPUESTA JSON
 header('Content-Type: application/json');
 
 $db = null;
 $songs_list_for_json = [];
+$current_user_id_for_likes_and_comments = isset($_SESSION['user_id']) ? (int)$_SESSION['user_id'] : null;
 
-// Determinar si hay un usuario logueado para personalizar la respuesta de "likes"
-$current_user_id_for_likes = null;
-if (isset($_SESSION['user_id'])) {
-    $current_user_id_for_likes = (int)$_SESSION['user_id'];
-    error_log("songs.php - Usuario logueado detectado. ID: " . $current_user_id_for_likes);
-} else {
-    error_log("songs.php - No hay usuario logueado (para likes).");
-}
+error_log("songs.php - User ID para likes/comments: " . ($current_user_id_for_likes_and_comments ?? 'N/A'));
 
 try {
     $db = connect();
+    if (!$db) {
+        throw new Exception("DB connect() falló.");
+    }
+    error_log("songs.php - Conexión a BD establecida.");
 
-    // Consulta SQL Modificada para incluir conteo de likes y si el usuario actual le dio like
-    $sql = "
+    $sql_songs = "
         SELECT 
             a.id, a.title, a.artist, a.featuredArtists, a.genre, 
             a.albumArtUrl, a.audioUrl, a.duration, a.userId, 
             a.fecha_subida AS createdAt,
             (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount";
 
-    // Si hay un usuario logueado, añadimos la subconsulta para 'userHasLiked'
-    // Es importante usar un placeholder (?) aquí y luego hacer bind_param si es necesario.
-    // Para EXISTS, no se necesita un SELECT de valor, solo la condición.
-    if ($current_user_id_for_likes !== null) {
-        $sql .= ", (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked";
+    if ($current_user_id_for_likes_and_comments !== null) {
+        $sql_songs .= ", (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked";
     } else {
-        // Si no hay usuario logueado, el campo userHasLiked siempre será falso.
-        // Usamos CAST para asegurar que sea interpretado como booleano en JSON si es posible.
-        $sql .= ", CAST(0 AS UNSIGNED) AS userHasLiked"; // O false, pero CAST(0 AS BOOLEAN) o CAST(0 AS UNSIGNED) es más SQL-estándar
+        $sql_songs .= ", 0 AS userHasLiked";
     }
     
-    $sql .= " FROM audios a ORDER BY a.fecha_subida DESC";
+    $sql_songs .= " FROM audios a ORDER BY a.fecha_subida DESC"; 
     
-    error_log("songs.php - SQL a ejecutar: " . preg_replace('/\s+/', ' ', $sql)); // Loguear SQL (sin datos sensibles si hay placeholders)
+    error_log("songs.php - SQL principal: " . preg_replace('/\s+/', ' ', $sql_songs));
 
-    $stmt = $db->prepare($sql);
-    if (!$stmt) {
-        error_log("songs.php - Error al preparar la consulta SQL: " . $db->error);
-        throw new Exception("Error al preparar la consulta de canciones: " . $db->error);
+    $stmt_songs = $db->prepare($sql_songs);
+    if (!$stmt_songs) {
+        throw new Exception("Error preparando consulta de canciones: " . $db->error);
     }
 
-    // Hacer bind_param si la consulta lo requiere (si hay usuario logueado)
-    if ($current_user_id_for_likes !== null) {
-        $stmt->bind_param("i", $current_user_id_for_likes);
-        error_log("songs.php - Parámetro enlazado para userHasLiked: " . $current_user_id_for_likes);
+    if ($current_user_id_for_likes_and_comments !== null) {
+        $stmt_songs->bind_param("i", $current_user_id_for_likes_and_comments);
     }
 
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $stmt_songs->execute();
+    $result_songs = $stmt_songs->get_result();
 
-    if ($result) {
-        error_log("songs.php - Consulta SQL ejecutada. Filas obtenidas: " . $result->num_rows);
+    if ($result_songs) {
+        error_log("songs.php - Consulta de canciones ejecutada. Filas: " . $result_songs->num_rows);
 
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "http://";
         $host = $_SERVER['HTTP_HOST'];
-        $webRootPathForUploads = '/backend-Sampler'; // AJUSTA SI TU CARPETA BACKEND NO ES 'backend-Sampler' en la URL
+        $webRootPathForUploads = '/backend-Sampler'; // AJUSTA SI ES NECESARIO
         $baseFileAccessUrl = rtrim($protocol . $host . $webRootPathForUploads, '/');
-        // error_log("songs.php - BaseFileAccessUrl: " . $baseFileAccessUrl); // Ya lo tienes
+        // error_log("songs.php - BaseFileAccessUrl: " . $baseFileAccessUrl); // Puedes descomentar para depurar URLs
 
-        while ($row = $result->fetch_assoc()) {
-            // error_log("songs.php - Procesando fila ID: " . ($row['id'] ?? 'N/A') . ", audioUrl de BD: " . ($row['audioUrl'] ?? 'N/A')); // Ya lo tienes
+        while ($song_row = $result_songs->fetch_assoc()) {
+            $song_id = (int) ($song_row['id'] ?? 0);
+            // error_log("songs.php - Procesando audio ID: " . $song_id);
 
-            $processed_album_art_url = null;
-            if (isset($row['albumArtUrl']) && !empty($row['albumArtUrl'])) {
-                if (preg_match('/^https?:\/\//i', $row['albumArtUrl'])) {
-                    $processed_album_art_url = $row['albumArtUrl'];
-                } else {
-                    $path_from_db_art = ltrim($row['albumArtUrl'], '/');
-                    $processed_album_art_url = $baseFileAccessUrl . '/' . $path_from_db_art;
-                }
-                // error_log("songs.php - albumArtUrl procesada para ID " . ($row['id'] ?? 'N/A') . ": " . ($processed_album_art_url ?? 'N/A'));
+            $processed_album_art_url = $song_row['albumArtUrl'] ?? null;
+            if ($processed_album_art_url && !preg_match('/^https?:\/\//i', $processed_album_art_url)) {
+                $processed_album_art_url = $baseFileAccessUrl . '/' . ltrim($song_row['albumArtUrl'], '/');
             }
-
-            $processed_audio_url = null;
-            if (isset($row['audioUrl']) && !empty($row['audioUrl'])) {
-                if (preg_match('/^https?:\/\//i', $row['audioUrl'])) {
-                    $processed_audio_url = $row['audioUrl'];
-                } else {
-                    $path_from_db_audio = ltrim($row['audioUrl'], '/');
-                    $processed_audio_url = $baseFileAccessUrl . '/' . $path_from_db_audio;
-                }
-                // error_log("songs.php - audioUrl procesada para ID " . ($row['id'] ?? 'N/A') . ": " . ($processed_audio_url ?? 'N/A'));
+            $processed_audio_url = $song_row['audioUrl'] ?? null;
+            if ($processed_audio_url && !preg_match('/^https?:\/\//i', $processed_audio_url)) {
+                $processed_audio_url = $baseFileAccessUrl . '/' . ltrim($song_row['audioUrl'], '/');
             }
+            // error_log("songs.php - audioUrl PROCESADA para ID {$song_id}: '{$processed_audio_url}'");
+
+
+            // --- OBTENER COMENTARIOS PARA ESTA CANCIÓN ---
+            $song_comments_array = [];
+            // Modificado: Se quita u.profilePicUrl ya que no existe en tu tabla usuarios
+            $sql_comments = "
+                SELECT c.id, c.comment_text, c.created_at, 
+                       u.id AS user_id_comment, u.usuario AS user_name_comment 
+                       -- u.profilePicUrl AS user_profile_pic_url_comment -- ELIMINADO
+                FROM comments c 
+                JOIN usuarios u ON c.user_id = u.id
+                WHERE c.song_id = ? 
+                ORDER BY c.created_at DESC
+            ";
+            $stmt_comments = $db->prepare($sql_comments);
+            if($stmt_comments){
+                $stmt_comments->bind_param("i", $song_id);
+                $stmt_comments->execute();
+                $result_comments = $stmt_comments->get_result();
+                while($comment_row = $result_comments->fetch_assoc()){
+                    $song_comments_array[] = [
+                        'id' => (int)$comment_row['id'],
+                        'text' => $comment_row['comment_text'],
+                        'createdAt' => $comment_row['created_at'],
+                        'user' => [
+                            'id' => (int)$comment_row['user_id_comment'],
+                            'name' => $comment_row['user_name_comment'], // Usa 'usuario' de tu tabla usuarios
+                            'profilePicUrl' => null // Devolver null o quitar si el frontend lo maneja
+                        ]
+                    ];
+                }
+                $stmt_comments->close();
+                // error_log("songs.php - ID: {$song_id}, Comentarios obtenidos: " . count($song_comments_array));
+            } else {
+                error_log("songs.php - Error preparando consulta de comentarios para song_id {$song_id}: " . $db->error);
+            }
+            // --- FIN OBTENER COMENTARIOS ---
             
             $song_item = [
-                'id' => (int) ($row['id'] ?? 0),
-                'title' => $row['title'] ?? 'Título Desconocido',
-                'artist' => $row['artist'] ?? 'Artista Desconocido',
-                'featuredArtists' => $row['featuredArtists'] ?? null,
-                'genre' => $row['genre'] ?? null,
+                'id' => $song_id,
+                'title' => $song_row['title'] ?? 'Título Desconocido',
+                'artist' => $song_row['artist'] ?? 'Artista Desconocido',
+                'featuredArtists' => $song_row['featuredArtists'] ?? null,
+                'genre' => $song_row['genre'] ?? null,
                 'albumArtUrl' => $processed_album_art_url,
-                'albumArt' => $processed_album_art_url,
-                'audioUrl' => $processed_audio_url,
-                // 'duration' => $row['duration'] ?? '0:00', // Cambiado abajo
-                'duration' => isset($row['duration']) ? (int)$row['duration'] : 0, // Asegurar entero o 0
-                'userId' => isset($row['userId']) ? (int)$row['userId'] : null,
-                'createdAt' => $row['createdAt'] ?? null,
-                'likeCount' => isset($row['likeCount']) ? (int)$row['likeCount'] : 0, // Nuevo
-                'userHasLiked' => isset($row['userHasLiked']) ? (bool)$row['userHasLiked'] : false // Nuevo, convertir a booleano
+                'albumArt' => $processed_album_art_url, 
+                'audioUrl' => $processed_audio_url, 
+                'duration' => $song_row['duration'] ?? '0:00', 
+                'userId' => isset($song_row['userId']) ? (int)$song_row['userId'] : null,
+                'createdAt' => $song_row['createdAt'] ?? null,
+                'likeCount' => isset($song_row['likeCount']) ? (int)$song_row['likeCount'] : 0,
+                'userHasLiked' => isset($song_row['userHasLiked']) ? (bool)$song_row['userHasLiked'] : false,
+                'comments' => $song_comments_array 
             ];
             $songs_list_for_json[] = $song_item;
         }
-        $result->free();
-        $stmt->close(); // Cerrar el statement aquí
+        $result_songs->free();
+        $stmt_songs->close(); 
         
         http_response_code(200);
-        // error_log("songs.php - Enviando respuesta JSON: " . print_r($songs_list_for_json, true)); // Ya lo tienes
+        // error_log("songs.php - Enviando respuesta JSON final (primer elemento si existe): " . (isset($songs_list_for_json[0]) ? print_r($songs_list_for_json[0], true) : "Array vacío"));
         echo json_encode($songs_list_for_json);
 
     } else {
-        // Este bloque podría no alcanzarse si $db->query() lanza una excepción o devuelve false y el error se captura antes.
-        // Si $stmt se preparó pero $stmt->execute() falló (y $stmt->get_result() devuelve false).
-        if ($stmt) $stmt->close(); // Asegurarse de cerrar el statement si se abrió.
-        $db_error = $db->error ?: ($stmt ? $stmt->error : "Error desconocido en la consulta.");
-        error_log("songs.php - Error en la consulta SQL (después de execute/get_result): " . $db_error);
-        throw new Exception("Error al ejecutar la consulta de canciones: " . $db_error);
+        if ($stmt_songs) $stmt_songs->close();
+        $db_error = $db->error ?: ($stmt_songs ? $stmt_songs->error : "Error desconocido en la consulta de canciones.");
+        throw new Exception("Error al ejecutar/obtener resultado de canciones: " . $db_error);
     }
 
 } catch (Exception $e) {
     http_response_code(500);
-    error_log("Error CRÍTICO en songs.php: " . $e->getMessage() . " - Trace: " . $e->getTraceAsString());
+    error_log("Error CRÍTICO en songs.php: " . $e->getMessage() . " - Archivo: " . $e->getFile() . " - Línea: " . $e->getLine()); // Quitado Trace para brevedad del log
     echo json_encode(['error' => 'Ocurrió un error al obtener las canciones.', 'details_server_message' => $e->getMessage()]);
 } finally {
     if ($db instanceof mysqli) {
         $db->close();
-        error_log("songs.php - Conexión a BD cerrada.");
+        // error_log("songs.php - Conexión a BD cerrada."); // Puedes descomentar para verificar
     }
 }
 ?>

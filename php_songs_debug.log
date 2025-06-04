@@ -42,3 +42,19 @@
 [03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] Intentando conectar. Host: 'localhost', User: 'root', DB_Var: ''
 [03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
 [03-Jun-2025 13:02:22 Europe/Berlin] [db_connection.php] FALLO: El nombre de la base de datos (variable $db) está vacío.
+[04-Jun-2025 23:10:29 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - User ID para likes/comments: 1
+[04-Jun-2025 23:10:29 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 23:10:29 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 23:10:29 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - Conexión a BD establecida.
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - SQL principal:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - Consulta de canciones ejecutada. Filas: 2
+[04-Jun-2025 23:10:29 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - User ID para likes/comments: 1
+[04-Jun-2025 23:10:29 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 23:10:29 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 23:10:29 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - Conexión a BD establecida.
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - SQL principal:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 23:10:29 Europe/Berlin] songs.php - Consulta de canciones ejecutada. Filas: 2

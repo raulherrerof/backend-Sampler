@@ -1018,3 +1018,57 @@
 [04-Jun-2025 11:40:00 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
 [04-Jun-2025 11:40:00 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
 [04-Jun-2025 11:40:00 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[04-Jun-2025 12:16:03 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[04-Jun-2025 12:16:03 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 12:16:03 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 12:16:03 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[04-Jun-2025 12:16:03 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[04-Jun-2025 12:16:03 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 12:16:03 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 12:16:03 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[04-Jun-2025 12:16:03 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[04-Jun-2025 12:44:27 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[04-Jun-2025 12:44:27 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 12:44:27 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 12:44:27 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[04-Jun-2025 12:44:27 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[04-Jun-2025 12:44:27 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 12:44:27 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 12:44:27 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[04-Jun-2025 12:44:27 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[04-Jun-2025 12:46:04 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 12:46:04 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[04-Jun-2025 12:46:04 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 12:46:04 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 12:46:04 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 12:46:04 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 12:46:04 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[04-Jun-2025 12:46:04 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[04-Jun-2025 12:46:04 Europe/Berlin] songs.php - Conexión a BD cerrada.
+[04-Jun-2025 12:46:04 Europe/Berlin] --- Ejecutando songs.php ---
+[04-Jun-2025 12:46:04 Europe/Berlin] songs.php - Usuario logueado detectado. ID: 1
+[04-Jun-2025 12:46:04 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 12:46:04 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 12:46:04 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 12:46:05 Europe/Berlin] songs.php - SQL a ejecutar:  SELECT a.id, a.title, a.artist, a.featuredArtists, a.genre, a.albumArtUrl, a.audioUrl, a.duration, a.userId, a.fecha_subida AS createdAt, (SELECT COUNT(*) FROM song_likes sl_count WHERE sl_count.song_id = a.id) AS likeCount, (EXISTS(SELECT 1 FROM song_likes sl_user WHERE sl_user.song_id = a.id AND sl_user.user_id = ?)) AS userHasLiked FROM audios a ORDER BY a.fecha_subida DESC
+[04-Jun-2025 12:46:05 Europe/Berlin] songs.php - Parámetro enlazado para userHasLiked: 1
+[04-Jun-2025 12:46:05 Europe/Berlin] songs.php - Consulta SQL ejecutada. Filas obtenidas: 2
+[04-Jun-2025 12:46:05 Europe/Berlin] songs.php - Conexión a BD cerrada.
