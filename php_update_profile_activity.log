@@ -43,3 +43,237 @@
 [05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Perfil actualizado en BD. Filas afectadas: 1
 [05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Conexión a BD cerrada.
 [05-Jun-2025 11:49:18 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
+[05-Jun-2025 12:11:20 Europe/Berlin] --- update_profile.php: INICIO --- 2025-06-05 12:11:20 - Method: POST
+[05-Jun-2025 12:11:20 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 12:11:20 Europe/Berlin] Session status: 2 - UserID: 1
+[05-Jun-2025 12:11:20 Europe/Berlin] update_profile.php POST data: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [dob] => 2002-05-01
+    [gender] => male
+    [aboutMe] => ghrtehd
+    [password] => 1234567
+)
+
+[05-Jun-2025 12:11:20 Europe/Berlin] update_profile.php FILES data: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpD3EB.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 12:11:20 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:11:20 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:11:20 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:11:20 Europe/Berlin] update_profile.php - Foto de perfil subida: uploads/profile_pics/user1_1749118280.jpg
+[05-Jun-2025 12:11:20 Europe/Berlin] update_profile.php - Foto de perfil anterior borrada: C:\xampp\htdocs\backend-Sampler\api/../../uploads/profile_pics/1_1749116958.jpg
+[05-Jun-2025 12:11:20 Europe/Berlin] update_profile.php - Perfil actualizado. Filas afectadas: 1
+[05-Jun-2025 12:11:20 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
+[05-Jun-2025 12:16:14 Europe/Berlin] --- update_profile.php: INICIO --- 2025-06-05 12:16:14 - Method: POST
+[05-Jun-2025 12:16:14 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 12:16:14 Europe/Berlin] Session status: 2 - UserID: 1
+[05-Jun-2025 12:16:14 Europe/Berlin] update_profile.php POST data: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [gender] => male
+    [aboutMe] => gjgfjy
+    [password] => 123456789
+)
+
+[05-Jun-2025 12:16:14 Europe/Berlin] update_profile.php FILES data: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php4FA0.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 12:16:14 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:16:14 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:16:14 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:16:14 Europe/Berlin] update_profile.php - Foto de perfil subida: uploads/profile_pics/user1_1749118574.jpg
+[05-Jun-2025 12:16:14 Europe/Berlin] update_profile.php - Foto de perfil anterior borrada: C:\xampp\htdocs\backend-Sampler\api/../../uploads/profile_pics/user1_1749118280.jpg
+[05-Jun-2025 12:16:14 Europe/Berlin] update_profile.php - Perfil actualizado. Filas afectadas: 1
+[05-Jun-2025 12:16:14 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
+[05-Jun-2025 12:21:39 Europe/Berlin] --- update_profile.php: INICIO --- 2025-06-05 12:21:39 - Method: POST
+[05-Jun-2025 12:21:39 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 12:21:39 Europe/Berlin] Session status: 2 - UserID: 1
+[05-Jun-2025 12:21:39 Europe/Berlin] update_profile.php POST data: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [dob] => 2002-05-01
+    [gender] => male
+    [aboutMe] => dgsghrsh
+    [password] => 123456
+)
+
+[05-Jun-2025 12:21:39 Europe/Berlin] update_profile.php FILES data: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php44CB.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 12:21:39 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:21:39 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:21:39 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:21:39 Europe/Berlin] update_profile.php - Foto de perfil subida: uploads/profile_pics/user1_1749118899.jpg
+[05-Jun-2025 12:21:39 Europe/Berlin] update_profile.php - Foto de perfil anterior borrada: C:\xampp\htdocs\backend-Sampler\api/../../uploads/profile_pics/user1_1749118574.jpg
+[05-Jun-2025 12:21:39 Europe/Berlin] update_profile.php - Perfil actualizado. Filas afectadas: 1
+[05-Jun-2025 12:21:39 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
+[05-Jun-2025 12:29:49 Europe/Berlin] --- update_profile.php: INICIO EJECUCIÓN --- 2025-06-05 12:29:49
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: REQUEST_METHOD = POST
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: HTTP_ORIGIN = http://localhost:3000
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: cors_headers.php incluido. Log de CORS interno: cors_headers_debug_log no definido o no accesible globalmente
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: session_start() llamado.
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: db_connection.php incluido.
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: Content-Type application/json seteado (principal).
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: Usuario autenticado ID: 1
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: Método POST confirmado.
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: Contenido de _POST: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [dob] => 2002-05-01
+    [gender] => male
+    [aboutMe] => fghdht
+    [password] => 123456
+)
+
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php: Contenido de _FILES: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpBDBA.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 12:29:49 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:29:49 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:29:49 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php - Conexión a BD exitosa.
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php - Foto de perfil subida: uploads/profile_pics/user1_1749119389.jpg
+[05-Jun-2025 12:29:49 Europe/Berlin] update_profile.php - Perfil actualizado. Filas afectadas: 1
+[05-Jun-2025 12:29:49 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
+[05-Jun-2025 12:33:18 Europe/Berlin] --- update_profile.php: INICIO EJECUCIÓN --- 2025-06-05 12:33:18
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: REQUEST_METHOD = POST
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: HTTP_ORIGIN = http://localhost:3000
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: cors_headers.php incluido. Log de CORS interno: cors_headers_debug_log no definido o no accesible globalmente
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: session_start() llamado.
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: db_connection.php incluido.
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: Content-Type application/json seteado (principal).
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: Usuario autenticado ID: 1
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: Método POST confirmado.
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: Contenido de _POST: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [dob] => 2002-05-01
+    [gender] => male
+    [aboutMe] => tghdrhrjhyj
+    [password] => 123456
+)
+
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php: Contenido de _FILES: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpEE04.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 12:33:18 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:33:18 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:33:18 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php - Conexión a BD exitosa.
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php - Directorio creado: C:\xampp\htdocs\backend-Sampler\api/../uploads/profile_pics/
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php - Foto de perfil subida: uploads/profile_pics/user1_1749119598.jpg
+[05-Jun-2025 12:33:18 Europe/Berlin] update_profile.php - Perfil actualizado. Filas afectadas: 1
+[05-Jun-2025 12:33:18 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
+[05-Jun-2025 12:38:02 Europe/Berlin] --- update_profile.php: INICIO EJECUCIÓN --- 2025-06-05 12:38:02
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: REQUEST_METHOD = POST
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: HTTP_ORIGIN = http://localhost:3000
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: cors_headers.php incluido. Log de CORS interno: cors_headers_debug_log no definido o no accesible globalmente
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: session_start() llamado.
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: db_connection.php incluido.
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: Content-Type application/json seteado (principal).
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: Usuario autenticado ID: 1
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: Método POST confirmado.
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: Contenido de _POST: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [dob] => 2002-05-01
+    [gender] => male
+    [aboutMe] => hyng
+    [password] => 1234567
+)
+
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php: Contenido de _FILES: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php43F2.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 12:38:02 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:38:02 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:38:02 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php - Conexión a BD exitosa.
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php - Foto de perfil subida: uploads/profile_pics/user1_1749119882.jpg
+[05-Jun-2025 12:38:02 Europe/Berlin] update_profile.php - Perfil actualizado. Filas afectadas: 1
+[05-Jun-2025 12:38:02 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---
