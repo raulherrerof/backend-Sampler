@@ -1,0 +1,45 @@
+[05-Jun-2025 11:49:18 Europe/Berlin] --- update_profile.php: INICIO EJECUCIÓN --- 2025-06-05 11:49:18
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: REQUEST_METHOD = POST
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: HTTP_ORIGIN = http://localhost:3000
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: cors_headers.php incluido. Log de CORS interno: cors_headers_debug_log no definido
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: session_start() llamado.
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: db_connection.php incluido.
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: Content-Type application/json seteado.
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: Usuario autenticado ID: 1
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: Método POST confirmado.
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: Contenido de _POST: Array
+(
+    [username] => Raul7
+    [email] => raulherrerofuertes@gmail.com
+    [name] => Raúl
+    [lastName] => Herrero Fuertes
+    [dob] => 2002-05-01
+    [gender] => male
+    [aboutMe] => fdgfgf
+    [password] => 12345678
+)
+
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php: Contenido de _FILES: Array
+(
+    [profilePic] => Array
+        (
+            [name] => foto-2.jpg
+            [full_path] => foto-2.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpA672.tmp
+            [error] => 0
+            [size] => 95051
+        )
+
+)
+
+[05-Jun-2025 11:49:18 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 11:49:18 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 11:49:18 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Conexión a BD exitosa.
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Directorio creado: C:\xampp\htdocs\backend-Sampler\api/../../uploads/profile_pics/
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Nueva foto de perfil subida: uploads/profile_pics/1_1749116958.jpg
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - SQL Update: UPDATE usuarios SET usuario = ?, email = ?, nombre = ?, apellido = ?, dob = ?, gender = ?, aboutMe = ?, contrasena = ?, profilePicUrl = ? WHERE id = ?
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Perfil actualizado en BD. Filas afectadas: 1
+[05-Jun-2025 11:49:18 Europe/Berlin] update_profile.php - Conexión a BD cerrada.
+[05-Jun-2025 11:49:18 Europe/Berlin] --- update_profile.php: FIN EJECUCIÓN ---

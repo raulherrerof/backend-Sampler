@@ -1,0 +1,12 @@
+[05-Jun-2025 11:37:54 Europe/Berlin] --- verificar_sesion.php (PRUEBA CORS DIRECTA) ---
+[05-Jun-2025 11:37:54 Europe/Berlin] Enviando ACAO para: http://localhost:3000
+[05-Jun-2025 11:37:54 Europe/Berlin] Devolviendo isLoggedIn: true
+[05-Jun-2025 11:37:54 Europe/Berlin] --- verificar_sesion.php (PRUEBA CORS DIRECTA) ---
+[05-Jun-2025 11:37:54 Europe/Berlin] Enviando ACAO para: http://localhost:3000
+[05-Jun-2025 11:37:54 Europe/Berlin] Devolviendo isLoggedIn: true
+[05-Jun-2025 11:39:59 Europe/Berlin] --- verificar_sesion.php (PRUEBA CORS DIRECTA) ---
+[05-Jun-2025 11:39:59 Europe/Berlin] Enviando ACAO para: http://localhost:3000
+[05-Jun-2025 11:39:59 Europe/Berlin] Devolviendo isLoggedIn: true
+[05-Jun-2025 11:39:59 Europe/Berlin] --- verificar_sesion.php (PRUEBA CORS DIRECTA) ---
+[05-Jun-2025 11:39:59 Europe/Berlin] Enviando ACAO para: http://localhost:3000
+[05-Jun-2025 11:39:59 Europe/Berlin] Devolviendo isLoggedIn: true

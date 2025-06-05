@@ -49,14 +49,18 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
     `nombre` VARCHAR(100) NOT NULL,
     `apellido` VARCHAR(100) NOT NULL,
     `edad` INT, -- Permitir NULL si no es siempre obligatorio
+    `dob` DATE NULL DEFAULT NULL,       -- Fecha de nacimiento
+    `gender` VARCHAR(50) NULL DEFAULT NULL, -- Sexo
+    `aboutMe` TEXT NULL DEFAULT NULL,   -- Sobre ti
+    `profilePicUrl` VARCHAR(512) NULL DEFAULT NULL, -- URL a la foto de perfil
     `created_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
+
 if ($conn->query($sql_usuarios)) {
     echo "Tabla 'usuarios' verificada/creada exitosamente.<br>";
 } else {
     echo "Error al crear la tabla 'usuarios': " . $conn->error . "<br>";
 }
-
 
 $sql_archivos_audio = "
 CREATE TABLE IF NOT EXISTS audios (

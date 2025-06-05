@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/../config/cors_headers.php';
 
 if (session_status() == PHP_SESSION_NONE) {
