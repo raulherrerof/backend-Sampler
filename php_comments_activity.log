@@ -1,0 +1,24 @@
+[05-Jun-2025 12:49:41 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:49:41 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:49:41 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:49:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt object is already closed in C:\xampp\htdocs\backend-Sampler\api\add_comment.php:181
+Stack trace:
+#0 C:\xampp\htdocs\backend-Sampler\api\add_comment.php(181): mysqli_stmt->close()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend-Sampler\api\add_comment.php on line 181
+[05-Jun-2025 12:49:54 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:49:54 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:49:54 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:49:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt object is already closed in C:\xampp\htdocs\backend-Sampler\api\add_comment.php:181
+Stack trace:
+#0 C:\xampp\htdocs\backend-Sampler\api\add_comment.php(181): mysqli_stmt->close()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend-Sampler\api\add_comment.php on line 181
+[05-Jun-2025 12:54:10 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 12:54:10 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 12:54:10 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 12:54:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli_stmt object is already closed in C:\xampp\htdocs\backend-Sampler\api\add_comment.php:181
+Stack trace:
+#0 C:\xampp\htdocs\backend-Sampler\api\add_comment.php(181): mysqli_stmt->close()
+#1 {main}
+  thrown in C:\xampp\htdocs\backend-Sampler\api\add_comment.php on line 181
