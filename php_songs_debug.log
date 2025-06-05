@@ -838,3 +838,69 @@
 [05-Jun-2025 12:54:01 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
 [05-Jun-2025 12:54:01 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
 [05-Jun-2025 12:54:01 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:00:37 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:00:37 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:00:37 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:00:55 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:00:56 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:00:56 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:23:15 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:23:15 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:23:15 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:24:20 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:24:20 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:24:20 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:24:34 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:24:34 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:24:34 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:09:14 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:09:14 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:09:14 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:16:28 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:16:28 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:16:28 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:52:34 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:52:34 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:52:34 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.

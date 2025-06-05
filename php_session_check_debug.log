@@ -596,3 +596,509 @@
     [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749119882.jpg
 )
 
+[05-Jun-2025 13:17:57 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 13:17:57
+[05-Jun-2025 13:17:57 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: NINGUNA
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => 
+    [email] => davidymatico@gmail.com
+    [lastName] => 
+    [dob] => 
+    [gender] => 
+    [aboutMe] => 
+    [profilePicUrl] => 
+)
+
+[05-Jun-2025 13:17:57 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 13:17:57
+[05-Jun-2025 13:17:57 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 13:17:57 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: NINGUNA
+[05-Jun-2025 13:17:57 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => 
+    [email] => davidymatico@gmail.com
+    [lastName] => 
+    [dob] => 
+    [gender] => 
+    [aboutMe] => 
+    [profilePicUrl] => 
+)
+
+[05-Jun-2025 22:30:06 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 22:30:06
+[05-Jun-2025 22:30:06 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 22:30:06 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 22:30:06
+[05-Jun-2025 22:30:06 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:30:06 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 22:30:06 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 22:45:16 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 22:45:16
+[05-Jun-2025 22:45:16 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 22:45:16 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 22:45:16
+[05-Jun-2025 22:45:16 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 22:45:16 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 22:45:16 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 23:10:18 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 23:10:18
+[05-Jun-2025 23:10:18 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 23:10:18 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 23:10:18
+[05-Jun-2025 23:10:18 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:10:18 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 23:10:18 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 23:12:32 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 23:12:32
+[05-Jun-2025 23:12:32 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[05-Jun-2025 23:12:32 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-05 23:12:32
+[05-Jun-2025 23:12:32 Europe/Berlin] Origin: http://localhost:3000
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[05-Jun-2025 23:12:32 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[05-Jun-2025 23:12:32 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 00:00:37 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 00:00:37
+[06-Jun-2025 00:00:37 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 00:00:37 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 00:00:37 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 00:00:37 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 00:00:37 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 00:00:37 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:00:37 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:00:37 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:00:37 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 00:00:37 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 00:00:55 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 00:00:55
+[06-Jun-2025 00:00:55 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 00:00:55 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 00:00:56 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 00:00:56 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 00:00:56 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 00:00:56 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:00:56 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:00:56 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:00:56 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 00:00:56 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 00:23:15 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 00:23:15
+[06-Jun-2025 00:23:15 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 00:23:15 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 00:23:15 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 00:23:15 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 00:23:15 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 00:23:15 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:23:15 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:23:15 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:23:15 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 00:23:15 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 00:24:20 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 00:24:20
+[06-Jun-2025 00:24:20 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 00:24:20 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 00:24:20 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 00:24:20 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 00:24:20 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 00:24:20 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:24:20 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:24:20 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:24:20 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 00:24:20 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 00:24:34 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 00:24:34
+[06-Jun-2025 00:24:34 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 00:24:34 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 00:24:34 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 00:24:34 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 00:24:34 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 00:24:34 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 00:24:34 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 00:24:34 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 00:24:34 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 00:24:34 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:09:14 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:09:14
+[06-Jun-2025 01:09:14 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:09:14 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:09:14 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:09:14 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:09:14 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:09:14 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:09:14 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:09:14 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:09:14 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:09:14 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:15:59 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:15:59
+[06-Jun-2025 01:15:59 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:15:59 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:15:59
+[06-Jun-2025 01:15:59 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:15:59 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:15:59 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:16:28 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:16:28
+[06-Jun-2025 01:16:28 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:16:28 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:16:28 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:16:28 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:16:28 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:16:28 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:16:28 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:16:28 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:16:28 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:16:28 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:52:34 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:52:34
+[06-Jun-2025 01:52:34 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:52:34 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:52:34 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:52:34 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:52:34 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:52:34 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:52:34 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:52:34 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:52:34 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:52:34 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:52:38 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:52:38
+[06-Jun-2025 01:52:38 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+
+[06-Jun-2025 01:52:38 Europe/Berlin] --- verificar_sesion.php: INICIO EJECUCIÓN --- 2025-06-06 01:52:38
+[06-Jun-2025 01:52:38 Europe/Berlin] Origin: http://localhost:3000
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: cors_headers.php incluido.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: session_start() llamado.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: Content-Type application/json seteado.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: user_id ENCONTRADO en sesión: 1
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[06-Jun-2025 01:52:38 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: URL completa de foto de perfil para JSON: http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+[06-Jun-2025 01:52:38 Europe/Berlin] verificar_sesion.php: Devolviendo usuario: Array
+(
+    [id] => 1
+    [username] => DavidSon
+    [name] => David
+    [email] => davidymatico@gmail.com
+    [lastName] => Sanclemente
+    [dob] => 2002-09-28
+    [gender] => male
+    [aboutMe] => Hola
+    [profilePicUrl] => http://localhost/backend-Sampler/uploads/profile_pics/user1_1749122321.jpg
+)
+

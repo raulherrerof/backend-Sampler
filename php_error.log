@@ -1,0 +1,16 @@
+[04-Jun-2025 23:32:59 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 23:32:59 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 23:32:59 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 23:44:10 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 23:44:10 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 23:44:10 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 23:48:33 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 23:48:33 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 23:48:33 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 23:48:33 Europe/Berlin] Salida del script (posiblemente no JSON):
+{"message":"Archivos subidos y canci\u00f3n registrada con \u00e9xito.","id":6,"title":"Socio","artist":"Eladio Carri\u00f3n","albumArtUrl":"uploads\/covers\/cover_6840bf31183d30.67089248.jpg","audioUrl":"uploads\/audio\/audio_6840bf31183db4.12971133.mp3","duration":null}
+[04-Jun-2025 23:48:33 Europe/Berlin] [db_connection.php] Intentando conectar. Host: localhost, User: root, DB_NAME: 'Sampler_db'
+[04-Jun-2025 23:48:33 Europe/Berlin] [db_connection.php] Conexión al SERVIDOR MySQL exitosa.
+[04-Jun-2025 23:48:33 Europe/Berlin] [db_connection.php] Base de datos 'Sampler_db' seleccionada exitosamente.
+[04-Jun-2025 23:48:33 Europe/Berlin] Salida del script (posiblemente no JSON):
+{"message":"Archivos subidos y canci\u00f3n registrada con \u00e9xito.","id":7,"title":"Socio","artist":"Eladio Carri\u00f3n","albumArtUrl":"uploads\/covers\/cover_6840bf31a77720.51225410.jpg","audioUrl":"uploads\/audio\/audio_6840bf31a777e3.56987546.mp3","duration":null}
