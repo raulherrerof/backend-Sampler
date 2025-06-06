@@ -132,7 +132,7 @@ try {
                 'albumArtUrl' => $processed_album_art_url,
                 'albumArt' => $processed_album_art_url, 
                 'audioUrl' => $processed_audio_url, 
-                'duration' => $song_row['duration'] ?? '0:00', 
+                'duration' => isset($song_row['duration']) ? (int)$song_row['duration'] : 0,
                 'userId' => isset($song_row['userId']) ? (int)$song_row['userId'] : null,
                 'createdAt' => $song_row['createdAt'] ?? null,
                 'likeCount' => isset($song_row['likeCount']) ? (int)$song_row['likeCount'] : 0,
